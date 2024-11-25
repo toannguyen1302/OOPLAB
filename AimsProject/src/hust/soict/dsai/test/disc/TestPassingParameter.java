@@ -21,7 +21,12 @@ public class TestPassingParameter {
         o1 = o2;
         o2 = tmp;
     }
-    
+    public static void changeTitle(DigitalVideoDisc dvd, String title) {
+        String oldTitle = dvd.getTitle();
+        dvd.setTitle(title);
+        dvd = new DigitalVideoDisc(oldTitle);
+    }
+}
 //    public static void swap (DigitalVideoDisc o1, DigitalVideoDisc o2) {
 //    	int len = o1.getLength();
 //    	String title = o1.getTitle();
@@ -42,10 +47,5 @@ public class TestPassingParameter {
 //    	o2.setLength(len);
 //    }
 
-    public static void changeTitle(DigitalVideoDisc dvd, String title) {
-        String oldTitle = dvd.getTitle();
-        dvd.setTitle(title);
-        dvd = new DigitalVideoDisc(oldTitle);
-    }
-}
+
 
