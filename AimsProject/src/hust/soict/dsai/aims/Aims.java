@@ -235,6 +235,10 @@ public class Aims {
     		cartMenu(store, cart, scanner);
     		storeMenu(store, cart, scanner);
     		break;
+    	default:
+            System.out.println("Invalid choice. Please try again.");
+            storeMenu(store, cart, scanner);
+        
     	}
     		
     }
@@ -291,6 +295,9 @@ public class Aims {
     			displayMediaDetailsMenu(m, cart, scanner);
     		}
     		break;
+    	default:
+            System.out.println("Invalid choice. Please try again.");
+			displayMediaDetailsMenu(m, cart, scanner);
     	}
     }
     
@@ -410,7 +417,10 @@ public class Aims {
     			cartMenu(store, cart, scanner);
     		}
     		break;
-    	
+    	default:
+            System.out.println("Invalid choice. Please try again.");
+			cartMenu(store, cart, scanner);
+
     	}
     }
 }
