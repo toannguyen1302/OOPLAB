@@ -1,12 +1,18 @@
 package hust.soict.dsai.aims.cart;
 
-import java.util.ArrayList;
 import java.util.Collections;
-
 import hust.soict.dsai.aims.media.Media;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 public class Cart {
-    private ArrayList<Media> itemsOrdered = new ArrayList<>();
+//    private ArrayList<Media> itemsOrdered = new ArrayList<>();
+	private ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
+	
+	public ObservableList<Media> getItemsOrdered() {
+		return itemsOrdered;
+	}
     
 // OVERLOADING (ADD dvdList to Cart)
     
@@ -64,17 +70,17 @@ public class Cart {
         String formattedCost = String.format("%.2f", sum);
         return formattedCost;
     }
-    public ArrayList<String> getItemsOrdered (){
-        ArrayList<String> cart = new ArrayList<>();
-        for (Media d : itemsOrdered){
-            String title = d.getTitle();
-            String category = d.getCategory();
-            float cost = d.getCost();
-            String display = "TITLE: " + title + "  CATEGORY: " + category + "  COST: " + cost;
-            cart.add(display);
-        }
-        return cart;
-    }
+//    public ArrayList<String> getItemsOrdered (){
+//        ArrayList<String> cart = new ArrayList<>();
+//        for (Media d : itemsOrdered){
+//            String title = d.getTitle();
+//            String category = d.getCategory();
+//            float cost = d.getCost();
+//            String display = "TITLE: " + title + "  CATEGORY: " + category + "  COST: " + cost;
+//            cart.add(display);
+//        }
+//        return cart;
+//    }
     
     
     public void printCart() {

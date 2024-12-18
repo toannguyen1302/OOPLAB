@@ -44,4 +44,11 @@ public class Disc extends Media {
 		super(title, category, cost);
 		this.director = director;
 	}
+
+
+	@Override
+	public int compareTo(Media o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

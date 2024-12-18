@@ -53,6 +53,12 @@ public class Book extends Media {
     public String toString() {
         return getTitle() + " - " + getCategory() + " - " + getAuthors() +  ": " + getCost() + "$";
     }
+
+	@Override
+	public int compareTo(Media o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 }
 
