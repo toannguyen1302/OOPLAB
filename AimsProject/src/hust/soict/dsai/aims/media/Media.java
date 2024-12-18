@@ -2,7 +2,7 @@ package hust.soict.dsai.aims.media;
 
 import java.util.Comparator;
 
-public abstract class Media {
+public abstract class Media implements Comparable<Media> {
 	
 	private static int id_counter = 0;
 	private int id;
